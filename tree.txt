@@ -1,0 +1,32 @@
+.
+├── dags
+│   ├── etl_dag.py
+│   └── __pycache__
+│       ├── etl_dag.cpython-310.pyc
+│       └── etl_dag.cpython-39.pyc
+├── docker-compose.yml
+├── Dockerfile
+├── docs
+│   ├── create_instance_profile_to_connect_s3_databricks
+│   └── create_secrete_key_to_work_with_s3
+├── image
+│   └── download.jpeg
+├── logs
+├── requirements.in
+├── requirements.txt
+├── script
+│   ├── checkpoint.txt
+│   ├── config.json
+│   ├── Databricks notebook
+│   │   └── Databricks Multi-Hop Architecture process.ipynb
+│   ├── entrypoint.sh
+│   ├── extract_data.py
+│   ├── load_from_db_to_s3.py
+│   ├── __pycache__
+│   │   ├── extract_data.cpython-310.pyc
+│   │   ├── extract_data.cpython-39.pyc
+│   │   └── load_from_db_to_s3.cpython-310.pyc
+│   └── test_sync.txt
+└── tree.txt
+
+8 directories, 21 files
