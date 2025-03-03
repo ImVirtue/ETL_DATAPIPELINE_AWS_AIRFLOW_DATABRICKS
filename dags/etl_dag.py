@@ -6,7 +6,7 @@ import sys
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from script.extract_data import etl
+from script.extract_data_from_api import etl
 from script.load_from_db_to_s3 import load_from_db_to_s3
 
 # def etl():
