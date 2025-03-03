@@ -1,9 +1,10 @@
 # ETL_DATAPIPELINE_AWS_AIRFLOW_DATABRICKS
+An ETL pipeline project that collects data from API to Databricks
 
 ![image](https://github.com/user-attachments/assets/fd128cbd-d7bd-47ca-a23c-ecfb784e8500)
 
 ```.
-├── dags
+├── dags (dags to run ETL airflow)
 │   ├── etl_dag.py
 │   └── __pycache__
 │       ├── etl_dag.cpython-310.pyc
@@ -14,7 +15,7 @@
 │   ├── create_instance_profile_to_connect_s3_databricks
 │   └── create_secrete_key_to_work_with_s3
 ├── image
-│   └── download.jpeg
+│   └── system_architecture.jpeg
 ├── logs
 ├── requirements.in
 ├── requirements.txt
