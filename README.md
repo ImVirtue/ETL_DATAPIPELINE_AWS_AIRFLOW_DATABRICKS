@@ -1,2 +1,3 @@
 # ETL_DATAPIPELINE_AWS_AIRFLOW_DATABRICKS
-Building An ETL Pipeline from API data source to pgsql and s3 and load into Databricks
+
+![image](https://github.com/user-attachments/assets/fd128cbd-d7bd-47ca-a23c-ecfb784e8500)
