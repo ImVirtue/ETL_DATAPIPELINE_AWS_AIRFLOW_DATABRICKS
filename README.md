@@ -2,7 +2,7 @@
 
 ![image](https://github.com/user-attachments/assets/fd128cbd-d7bd-47ca-a23c-ecfb784e8500)
 
-.
+```.
 ├── dags
 │   ├── etl_dag.py
 │   └── __pycache__
@@ -32,5 +32,6 @@
 │   │   └── load_from_db_to_s3.cpython-310.pyc
 │   └── test_sync.txt
 └── tree.txt
+```
 
 
