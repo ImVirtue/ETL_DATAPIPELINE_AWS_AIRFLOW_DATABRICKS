@@ -1,38 +1,32 @@
-# ETL_DATAPIPELINE_AWS_AIRFLOW_DATABRICKS
-An ETL pipeline project that collects data from API to Databricks
+# Automated ETL Data pipeline that collects data from API and Processes through several layers before eventually sending it to Databricks
 
 ![image](https://github.com/user-attachments/assets/fd128cbd-d7bd-47ca-a23c-ecfb784e8500)
 
-```.
-├── dags (dags to run ETL airflow)
-│   ├── etl_dag.py
-│   └── __pycache__
-│       ├── etl_dag.cpython-310.pyc
-│       └── etl_dag.cpython-39.pyc
-├── docker-compose.yml
-├── Dockerfile
-├── docs (How to get access between Databricks and AWS services)
-│   ├── create_instance_profile_to_connect_s3_databricks
-│   └── create_secrete_key_to_work_with_s3
-├── image
-│   └── system_architecture.jpeg
-├── logs
-├── requirements.in
-├── requirements.txt
-├── script
-│   ├── checkpoint.txt
-│   ├── config.json (Create on your own)
-│   ├── Databricks notebook
-│   │   └── Databricks Multi-Hop Architecture process.ipynb
-│   ├── entrypoint.sh
-│   ├── extract_data.py
-│   ├── load_from_db_to_s3.py
-│   ├── __pycache__
-│   │   ├── extract_data.cpython-310.pyc
-│   │   ├── extract_data.cpython-39.pyc
-│   │   └── load_from_db_to_s3.cpython-310.pyc
-│   └── test_sync.txt
-└── tree.txt
-```
+## Table of Contents
+- [Introduction](#introduction)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Conclusion](#concly)
+
+## Introduction
+This project is to create an Automated ETL data pipeline that utilize the power of available Cloud services like AWS S3 and Databricks
+
+## Features
+- **Automated ETL Pipeline**: Using Apache Airflow to schedule the flow of retrieving data from API, stored it into PostgreSQL and load into the AWS S3 bucket. After that Databricks will detect the new files and
+  automatically load into the Databricks layer to process afterwards.
+- **Docker Compose Setup**: The project uses Docker Compose to streamline the deployment and management of the required services, including Apache Airflow, PostgreSQL.
+
+## Technologies Used
+- **PostgreSQL**: To store transformed data from API.
+- **Apache Airflow**: Schedule tasks from extracting data to loading data to the target source AWS S3.
+- **AWS S3 Bucket**: Store data after transforming from API coming under the.csv format
+- **Databricks**: Utilize the power of Incremental data processing (Auto Loader) to automatically detect and load data into Delta Lake. After that, Data is transformed within Multi-Hop Architecture before Reporting or Applying for the Machine Learning model
+- **Docker Compose**: To orchestrate the deployment of the above technologies.
+
+## Conclusion
+- The main purpose of this project is to create an automated ETL pipeline, it helps understand the interaction between services ranged from open-source to cloud technologies.
+
+
+
 
 
